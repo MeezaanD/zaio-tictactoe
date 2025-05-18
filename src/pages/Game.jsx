@@ -12,8 +12,8 @@ const GameContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Add this */
-  min-height: 100vh;       /* Add this */
+  justify-content: center;
+  min-height: 100vh;
   padding: 2rem;
 `;
 

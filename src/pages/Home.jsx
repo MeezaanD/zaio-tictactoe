@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import logo from '../assets/tictactoe.png';
 
 const Container = styled.div`
   display: flex;
@@ -11,9 +12,21 @@ const Container = styled.div`
   padding: 2rem;
 `;
 
+const Header = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+`;
+
+const Logo = styled.img`
+  width: 60px;
+  height: 60px;
+  margin-right: 1rem;
+`;
+
 const Title = styled.h1`
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin: 0;
 `;
 
 const Button = styled.button`
@@ -49,7 +62,10 @@ export default function Home() {
 
   return (
     <Container>
-      <Title>Tic Tac Toe</Title>
+      <Header>
+        <Logo src={logo} alt="Tic Tac Toe Logo" />
+        <Title>Tic Tac Toe</Title>
+      </Header>
       <Button onClick={() => navigate('/game')}>Start Game</Button>
       <div style={{ position: 'relative', display: 'inline-block' }}>
         <Button
