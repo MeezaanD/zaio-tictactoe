@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { useGame } from '../context/GameContext';
 import Header from '../components/Header';
 import Board from '../components/Board';
-import ScoreBoard from '../components/Scoreboard';
+import ScoreBoard from '../components/ScoreBoard';
 import Modal from '../components/Modal';
 import clickSound from '../assets/sounds/click.mp3';
 import winSound from '../assets/sounds/win.mp3';
